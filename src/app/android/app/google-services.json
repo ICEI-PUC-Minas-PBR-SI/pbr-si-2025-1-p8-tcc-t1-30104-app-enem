@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "199016142151",
+    "firebase_url": "https://appenem-69a1f-default-rtdb.firebaseio.com",
+    "project_id": "appenem-69a1f",
+    "storage_bucket": "appenem-69a1f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199016142151:android:ea304d37dd6a71ce84a862",
+        "android_client_info": {
+          "package_name": "com.joaoaugusto.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199016142151-c1f1ehgi17vp45h48fpv71ait5e5gj87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn6gDgjI3xhre9k4JuBr4CgFlkw-JLggg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199016142151-c1f1ehgi17vp45h48fpv71ait5e5gj87.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

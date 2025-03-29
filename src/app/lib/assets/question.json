@@ -1,0 +1,363 @@
+{
+  "subjects": [
+    {
+      "name": "Matemática",
+      "topics": [
+        {
+          "title": "Operações básicas",
+          "description": "Questões relacionadas a somar, subtrair, multiplicar e dividir.",
+          "questions": [
+            { "question": "Um pacote contém 24 lápis. Se uma escola compra 15 pacotes, quantos lápis a escola terá no total?", "options": ["340", "350", "360", "370"], "answer": "360", "difficulty": "fácil" },
+            { "question": "João comprou 7 pacotes de balas, cada um com 12 unidades. Quantas balas ele tem agora?", "options": ["72", "84", "96", "108"], "answer": "84", "difficulty": "fácil" },
+            { "question": "Pedro divide igualmente 450 reais entre 15 pessoas. Quanto cada uma recebe?", "options": ["25", "30", "35", "40"], "answer": "30", "difficulty": "fácil" },
+            { "question": "Se Ana possui 12 cadernos e compra mais 8, quantos cadernos ela terá no total?", "options": ["18", "19", "20", "21"], "answer": "20", "difficulty": "fácil" },
+            { "question": "Se um bolo é cortado em 8 partes iguais e 5 são consumidas, quantas sobram?", "options": ["2", "3", "4", "5"], "answer": "3", "difficulty": "fácil" },
+            { "question": "Carlos tem 15 caixas, cada uma com 10 livros. Quantos livros ele tem no total?", "options": ["120", "130", "140", "150"], "answer": "150", "difficulty": "fácil" },
+            { "question": "Se uma sacola contém 8 maçãs e são adicionadas mais 5, quantas maçãs há no total?", "options": ["10", "11", "12", "13"], "answer": "13", "difficulty": "fácil" },
+            { "question": "Um ônibus tem 25 passageiros. Se entram mais 10, quantos passageiros há agora?", "options": ["30", "32", "35", "37"], "answer": "35", "difficulty": "fácil" },
+            { "question": "Se Maria tem 120 maçãs e dá 3/4 para um mercado, quantas maçãs ela tem agora?", "options": ["30", "40", "50", "60"], "answer": "30", "difficulty": "médio" },
+            { "question": "Quanto é 15% de 240?", "options": ["30", "36", "42", "48"], "answer": "36", "difficulty": "médio" },
+            { "question": "Um agricultor colheu 350 maçãs em um dia e 275 no outro. Quantas maçãs ele colheu no total?", "options": ["600", "625", "630", "635"], "answer": "625", "difficulty": "médio" },
+            { "question": "Quanto é 25% de 800?", "options": ["100", "150", "200", "250"], "answer": "200", "difficulty": "médio" },
+            { "question": "Em um supermercado, uma oferta diz que 3 pacotes de arroz custam R$ 24,00. Qual o preço de cada pacote?", "options": ["R$ 6,00", "R$ 7,00", "R$ 8,00", "R$ 9,00"], "answer": "R$ 8,00", "difficulty": "médio" },
+            { "question": "Joana tem 3 vezes mais figurinhas que Pedro. Se Pedro tem 15 figurinhas, quantas figurinhas Joana tem?", "options": ["30", "35", "40", "45"], "answer": "45", "difficulty": "médio" },
+            { "question": "Se um relógio adianta 3 minutos a cada hora, quantos minutos ele terá adiantado ao fim de um dia (24h)?", "options": ["60", "72", "75", "90"], "answer": "72", "difficulty": "médio" },
+            { "question": "Em uma sala de aula com 40 alunos, 18 são meninos. Qual a porcentagem de meninas?", "options": ["50%", "55%", "60%", "65%"], "answer": "55%", "difficulty": "médio" },
+            { "question": "Se um produto custa R$ 120,00 e sofre um aumento de 15%, qual será o novo preço?", "options": ["R$ 132,00", "R$ 138,00", "R$ 140,00", "R$ 144,00"], "answer": "R$ 138,00", "difficulty": "médio" },
+            { "question": "Um trem percorre 360 km em 4 horas. Qual é a sua velocidade média?", "options": ["85 km/h", "90 km/h", "95 km/h", "100 km/h"], "answer": "90 km/h", "difficulty": "médio" },
+            { "question": "Se um livro custa R$ 80,00 e há um desconto de 20%, qual será o valor final pago?", "options": ["R$ 60,00", "R$ 64,00", "R$ 68,00", "R$ 72,00"], "answer": "R$ 64,00", "difficulty": "médio" },
+            { "question": "Uma empresa produz 400 canetas por dia. Quantas canetas serão produzidas em 3 semanas?", "options": ["8400", "9000", "840", "12000"], "answer": "8400", "difficulty": "difícil" },
+            { "question": "Um automóvel percorreu 450 km em 5 horas. Qual é a sua velocidade média?", "options": ["75 km/h", "80 km/h", "85 km/h", "90 km/h"], "answer": "90 km/h", "difficulty": "difícil" },
+            { "question": "Uma loja tem um desconto progressivo: 10% na primeira compra, 20% na segunda e 30% na terceira. Se um cliente compra três produtos de R$ 200,00, qual é o total pago?", "options": ["R$ 480,00", "R$ 500,00", "R$ 520,00", "R$ 540,00"], "answer": "R$ 480,00", "difficulty": "difícil" },
+            { "question": "Um tanque de combustível de 60 litros está com 2/5 da capacidade cheia. Quantos litros são necessários para enchê-lo?", "options": ["24L", "30L", "36L", "40L"], "answer": "36L", "difficulty": "difícil" },
+            { "question": "Uma fábrica de tecidos produz 1.200 metros de tecido por dia. Quantos metros serão produzidos em 26 dias de funcionamento?", "options": ["28.800m", "30.000m", "31.200m", "32.400m"], "answer": "31.200m", "difficulty": "difícil" },
+            { "question": "Em uma escola, 60% dos alunos praticam esportes. Se há 450 alunos na escola, quantos não praticam esportes?", "options": ["150", "180", "200", "220"], "answer": "180", "difficulty": "difícil" },
+            { "question": "Um investidor aplicou R$ 5.000,00 em uma conta que rende 2% ao mês. Qual será o saldo após 6 meses, considerando juros compostos?", "options": ["R$ 5.612,08", "R$ 5.630,00", "R$ 5.700,00", "R$ 5.850,00"], "answer": "R$ 5.612,08", "difficulty": "difícil" },
+            { "question": "Um ciclista percorre 90 km em 3 horas e depois mais 60 km em 2 horas. Qual a sua velocidade média?", "options": ["25 km/h", "30 km/h", "32 km/h", "35 km/h"], "answer": "30 km/h", "difficulty": "difícil" },
+            { "question": "Uma empresa tem um crescimento de 8% ao ano. Se hoje vale R$ 100.000,00, qual será seu valor em 5 anos?", "options": ["R$ 140.000,00", "R$ 146.932,00", "R$ 150.000,00", "R$ 155.000,00"], "answer": "R$ 146.932,00", "difficulty": "difícil" }
+          ]
+        },
+        {
+          "title": "Geometria no ENEM",
+          "description": "Questões sobre áreas, perímetros e volumes aplicados ao cotidiano.",
+          "questions": [
+            { "question": "Uma sala tem forma retangular e mede 8 metros de comprimento por 6 metros de largura. Qual é a área da sala?", "options": ["36 m²", "42 m²", "48 m²", "60 m²"], "answer": "48 m²" },
+            { "question": "Um tanque cilíndrico tem raio de 1,5 metros e altura de 4 metros. Qual é o volume aproximado? (Use π ≈ 3)", "options": ["27 m³", "30 m³", "33 m³", "36 m³"], "answer": "27 m³" },
+            { "question": "Um terreno triangular tem base de 10 metros e altura de 12 metros. Qual é sua área?", "options": ["50 m²", "60 m²", "70 m²", "80 m²"], "answer": "60 m²" },
+            { "question": "Uma piscina tem formato cúbico com lado de 5 metros. Qual é o volume da piscina?", "options": ["100 m³", "120 m³", "125 m³", "150 m³"], "answer": "125 m³" },
+            { "question": "Uma praça circular tem raio de 7 metros. Qual é sua área aproximada? (Use π ≈ 3)", "options": ["140 m²", "147 m²", "154 m²", "161 m²"], "answer": "147 m²" },
+            { "question": "Uma quadra retangular tem 20 metros de comprimento e 10 metros de largura. Qual é o perímetro?", "options": ["40 m", "50 m", "60 m", "70 m"], "answer": "60 m" },
+            { "question": "Qual é o volume de uma caixa d'água cúbica com 3 metros de lado?", "options": ["18 m³", "24 m³", "27 m³", "30 m³"], "answer": "27 m³" },
+            { "question": "Um campo circular tem raio de 10 metros. Qual é o comprimento da circunferência? (Use π ≈ 3)", "options": ["20 m", "30 m", "40 m", "60 m"], "answer": "60 m" },
+            { "question": "Uma pirâmide tem base quadrada de 4 metros de lado e altura de 9 metros. Qual é o volume?", "options": ["36 m³", "48 m³", "60 m³", "72 m³"], "answer": "48 m³" },
+            { "question": "Uma área em forma de triângulo isósceles tem lados de 6 m, 6 m e base de 8 m. Qual é o perímetro?", "options": ["18 m", "20 m", "22 m", "24 m"], "answer": "20 m" }
+          ]
+        },
+        {
+          "title": "Estatística no ENEM",
+          "description": "Questões sobre média, moda e mediana aplicadas ao dia a dia.",
+          "questions": [
+            { "question": "A média de cinco números é 10. Qual é a soma desses números?", "options": ["40", "45", "50", "55"], "answer": "50" },
+            { "question": "Os números são 2, 2, 3, 5, 5, 5. Qual é a moda?", "options": ["2", "3", "5", "Nenhuma"], "answer": "5" },
+            { "question": "A mediana dos números 7, 9, 10, 12, 15 é:", "options": ["9", "10", "12", "15"], "answer": "10" },
+            { "question": "Se uma turma tem notas 7, 8, 9 e 10, qual é a média das notas?", "options": ["8", "8.5", "9", "9.5"], "answer": "8.5" },
+            { "question": "Qual é a moda dos números 3, 4, 4, 5, 6?", "options": ["3", "4", "5", "Nenhuma"], "answer": "4" },
+            { "question": "Os números são 3, 5, 7, 7, 9. Qual é a mediana?", "options": ["3", "5", "7", "9"], "answer": "7" },
+            { "question": "A soma de três números é 21 e a média é 7. Quais são os números?", "options": ["7, 7, 7", "6, 7, 8", "5, 8, 8", "3, 9, 9"], "answer": "7, 7, 7" },
+            { "question": "Qual é a média aritmética dos números 12, 15, 18, e 20?", "options": ["15", "16", "16.25", "17"], "answer": "16.25" },
+            { "question": "A moda dos números 4, 4, 5, 6, 7, 7 é:", "options": ["4", "6", "7", "Ambas"], "answer": "Ambas" },
+            { "question": "A média ponderada dos números 5 e 10 com pesos 2 e 1 é:", "options": ["6", "7", "8", "9"], "answer": "6" }
+          ]
+        },
+        {
+          "title": "Funções no ENEM",
+          "description": "Questões relacionadas a funções lineares, quadráticas e exponenciais.",
+          "questions": [
+            { "question": "Qual é a raiz da função f(x) = 2x - 6?", "options": ["2", "3", "4", "5"], "answer": "3" },
+            { "question": "Se f(x) = x² - 9, qual é a imagem de f(4)?", "options": ["7", "8", "9", "16"], "answer": "7" },
+            { "question": "Para a função linear f(x) = 3x + 2, qual é o valor de f(0)?", "options": ["1", "2", "3", "4"], "answer": "2" },
+            { "question": "A função exponencial f(x) = 2^x possui qual valor para x = 3?", "options": ["6", "7", "8", "9"], "answer": "8" },
+            { "question": "Qual é o vértice da parábola y = x² - 4x + 3?", "options": ["(1, 0)", "(2, -1)", "(3, 0)", "(4, -1)"], "answer": "(2, -1)" },
+            { "question": "Para a função f(x) = -x² + 4x - 3, qual é o valor máximo de f(x)?", "options": ["1", "3", "5", "7"], "answer": "1" },
+            { "question": "Qual é a equação da reta que passa pelos pontos (1, 2) e (3, 6)?", "options": ["y = 2x", "y = 3x - 1", "y = x + 1", "y = 2x + 1"], "answer": "y = 2x" },
+            { "question": "Se f(x) = 2x² - 8x + 6, qual é o valor de f(3)?", "options": ["-2", "0", "2", "4"], "answer": "0" },
+            { "question": "Qual é o coeficiente angular da reta y = -5x + 7?", "options": ["-5", "7", "0", "1"], "answer": "-5" },
+            { "question": "A função g(x) = 3^x tem qual valor para x = 2?", "options": ["6", "8", "9", "12"], "answer": "9" }
+          ]
+        },
+        {
+          "title": "Razão e Proporção no ENEM",
+          "description": "Questões sobre proporções, razões e escalas.",
+          "questions": [
+            { "question": "Qual é a razão entre 8 e 4?", "options": ["1:2", "2:1", "3:1", "4:1"], "answer": "2:1" },
+            { "question": "Se 3 bolas custam R$ 15,00, quanto custa 5 bolas?", "options": ["R$ 20,00", "R$ 25,00", "R$ 30,00", "R$ 35,00"], "answer": "R$ 25,00" },
+            { "question": "Uma receita pede 3 partes de água para 2 partes de suco. Se tenho 15 litros de suco, quanto de água preciso?", "options": ["20 L", "22 L", "23 L", "25 L"], "answer": "20 L" },
+            { "question": "Em um mapa, 1 cm equivale a 50 km. Qual é a distância real representada por 3 cm?", "options": ["100 km", "150 km", "200 km", "250 km"], "answer": "150 km" },
+            { "question": "Qual é a razão equivalente a 4/8?", "options": ["1/2", "2/3", "3/4", "4/5"], "answer": "1/2" },
+            { "question": "Se uma roda gira 360 graus em 10 segundos, qual é a razão de graus por segundo?", "options": ["30", "36", "40", "45"], "answer": "36" },
+            { "question": "Uma escala em um mapa é 1:200000. Qual é a distância real correspondente a 5 cm no mapa?", "options": ["1000 km", "100 km", "10 km", "1 km"], "answer": "10 km" },
+            { "question": "Se 4 maçãs custam R$ 12,00, qual é o custo de 7 maçãs?", "options": ["R$ 18,00", "R$ 19,00", "R$ 21,00", "R$ 22,00"], "answer": "R$ 21,00" },
+            { "question": "Um automóvel percorre 120 km com 8 litros de combustível. Qual é a razão de km por litro?", "options": ["12", "14", "15", "16"], "answer": "15" },
+            { "question": "Qual é a proporção entre 24 e 36 simplificada?", "options": ["2:3", "3:4", "4:5", "5:6"], "answer": "2:3" }
+          ]
+        }
+        
+      ]
+    },
+    {
+      "name": "Português",
+      "topics": [
+        {
+          "title": "Gramática",
+          "description": "Questões sobre concordância e regência.",
+          "questions": [
+            { "question": "Qual é a forma correta: 'Ela foi no mercado' ou 'Ela foi ao mercado'?", "options": ["Primeira", "Segunda"], "answer": "Segunda" },
+            { "question": "O uso do pronome está correto em: 'Me avisa quando chegar.'?", "options": ["Sim", "Não"], "answer": "Não" },
+            { "question": "Qual é o plural correto de 'pão-de-ló'?", "options": ["Pães-de-ló", "Pão-de-lós", "Pãos-de-ló", "Pães-de-lós"], "answer": "Pães-de-ló" },
+            { "question": "Qual é a função do hífen na palavra 'bem-estar'?", "options": ["Separar prefixo e base", "Unir duas palavras"], "answer": "Unir duas palavras" },
+            { "question": "Identifique a função sintática do termo: 'Ela trouxe o presente para você.'", "options": ["Complemento direto", "Complemento indireto"], "answer": "Complemento indireto" },
+            { "question": "Qual é o sujeito da frase: 'Houve muitas reclamações sobre o evento.'?", "options": ["Houve", "Reclamações", "Muitas", "Nenhum"], "answer": "Reclamações" },
+            { "question": "Qual frase está correta?", "options": ["Preciso de que você me ajude.", "Preciso que você me ajude."], "answer": "Preciso que você me ajude." },
+            { "question": "Qual é o plural correto de 'mal-me-quer'?", "options": ["Mal-me-queres", "Males-me-quer", "Mal-me-queres", "Males-me-queres"], "answer": "Mal-me-queres" },
+            { "question": "A concordância verbal está correta em: 'Fazem dez anos que viajei.'?", "options": ["Sim", "Não"], "answer": "Não" },
+            { "question": "Identifique a voz verbal da frase: 'Os alunos realizaram a pesquisa.'", "options": ["Ativa", "Passiva", "Reflexiva"], "answer": "Ativa" }
+          ]
+        },
+        {
+          "title": "Ortografia",
+          "description": "Questões sobre uso correto das palavras.",
+          "questions": [
+            { "question": "Qual é a grafia correta?", "options": ["Enchergar", "Enxergar"], "answer": "Enxergar" },
+            { "question": "A palavra 'coração' tem quantas sílabas?", "options": ["2", "3", "4"], "answer": "3" },
+            { "question": "Complete: 'Vou ___ a situação para entender melhor.'", "options": ["analisar", "analizar"], "answer": "analisar" },
+            { "question": "Qual é o plural de 'cidadão'?", "options": ["Cidadãos", "Cidadões"], "answer": "Cidadãos" },
+            { "question": "A palavra 'ansiedade' está escrita corretamente?", "options": ["Sim", "Não"], "answer": "Sim" },
+            { "question": "Qual é o correto: 'Empecilho' ou 'Impecilho'?", "options": ["Empecilho", "Impecilho"], "answer": "Empecilho" },
+            { "question": "Como se escreve corretamente: 'Excessão' ou 'Exceção'?", "options": ["Excessão", "Exceção"], "answer": "Exceção" },
+            { "question": "A palavra 'transação' está correta?", "options": ["Sim", "Não"], "answer": "Sim" },
+            { "question": "Complete: 'Ele é muito ___ com as suas tarefas.'", "options": ["eficiente", "eficiênte"], "answer": "eficiente" },
+            { "question": "Qual é a forma correta: 'Reivindicação' ou 'Reinvindicação'?", "options": ["Reivindicação", "Reinvindicação"], "answer": "Reivindicação" }
+          ]
+        },        
+        {
+          "title": "Redação",
+          "description": "Questões sobre construção de texto.",
+          "questions": [
+            { "question": "Qual é a estrutura de um texto dissertativo?", "options": ["Introdução, Desenvolvimento, Conclusão", "Prólogo, Epílogo"], "answer": "Introdução, Desenvolvimento, Conclusão" },
+            { "question": "Quantos parágrafos devem ter, no mínimo, um texto do ENEM?", "options": ["2", "3", "4", "5"], "answer": "3" },
+            { "question": "O que deve conter na tese do texto?", "options": ["Problema e justificativa", "Soluções"], "answer": "Problema e justificativa" },
+            { "question": "Uma boa introdução deve conter:", "options": ["Resumo", "Contextualização e tese"], "answer": "Contextualização e tese" },
+            { "question": "Qual o limite de caracteres de uma redação no ENEM?", "options": ["30 linhas", "35 linhas"], "answer": "30 linhas" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Geografia",
+      "topics": [
+        {
+          "title": "Cartografia",
+          "description": "Questões sobre mapas, escalas e coordenadas geográficas.",
+          "questions": [
+            { "question": "O que representam as coordenadas geográficas?", "options": ["Latitude e longitude", "Altura e largura", "Pontos cardeais", "Curvaturas do terreno"], "answer": "Latitude e longitude" },
+            { "question": "Qual é a função de uma escala em um mapa?", "options": ["Medir altitudes", "Indicar direção", "Reduzir proporções", "Mostrar o relevo"], "answer": "Reduzir proporções" },
+            { "question": "O que é uma carta topográfica?", "options": ["Um mapa político", "Um mapa físico", "Um mapa com relevo detalhado", "Um mapa climático"], "answer": "Um mapa com relevo detalhado" },
+            { "question": "Qual linha divide a Terra em hemisférios Norte e Sul?", "options": ["Meridiano de Greenwich", "Linha do Equador", "Trópico de Câncer", "Círculo Polar Ártico"], "answer": "Linha do Equador" },
+            { "question": "O que indica a longitude de um local?", "options": ["A distância ao Meridiano de Greenwich", "A distância ao Equador", "A altitude do terreno", "A profundidade do mar"], "answer": "A distância ao Meridiano de Greenwich" },
+            { "question": "O que representa a linha do Meridiano de Greenwich em um mapa?", "options": ["A divisão entre hemisférios Norte e Sul", "A linha de longitude zero", "A linha de latitude máxima", "A borda da Terra"], "answer": "A linha de longitude zero" },
+            { "question": "Qual é a unidade usada para medir a latitude e longitude?", "options": ["Metros", "Graus", "Milhas", "Quilômetros"], "answer": "Graus" },
+            { "question": "Qual é o principal elemento necessário para interpretar um mapa?", "options": ["Legenda", "Latitude", "Longitude", "Projeção"], "answer": "Legenda" },
+            { "question": "O que é uma projeção cartográfica?", "options": ["A representação tridimensional da Terra", "A transformação da superfície terrestre em um plano", "A escala de um mapa", "A curvatura do planeta"], "answer": "A transformação da superfície terrestre em um plano" },
+            { "question": "O que é o paralelo de latitude 0°?", "options": ["Meridiano de Greenwich", "Linha do Equador", "Trópico de Câncer", "Círculo Polar Ártico"], "answer": "Linha do Equador" }
+          ]
+        },
+        {
+          "title": "Geografia Física",
+          "description": "Questões sobre relevo, clima e vegetação.",
+          "questions": [
+            { "question": "Qual é o maior bioma brasileiro?", "options": ["Cerrado", "Caatinga", "Mata Atlântica", "Amazônia"], "answer": "Amazônia" },
+            { "question": "O que são aquíferos?", "options": ["Lagos naturais", "Reservatórios subterrâneos de água", "Canais de irrigação", "Redes de drenagem"], "answer": "Reservatórios subterrâneos de água" },
+            { "question": "Qual é o clima predominante na região Sul do Brasil?", "options": ["Tropical", "Semiárido", "Subtropical", "Equatorial"], "answer": "Subtropical" },
+            { "question": "O Pantanal está localizado principalmente em qual estado brasileiro?", "options": ["Mato Grosso", "Mato Grosso do Sul", "Pará", "Amazonas"], "answer": "Mato Grosso do Sul" },
+            { "question": "Como são chamadas as áreas de encontro de placas tectônicas?", "options": ["Falhas", "Dobramentos modernos", "Zonas de subducção", "Regiões sedimentares"], "answer": "Zonas de subducção" },
+            { "question": "Qual é o tipo de solo predominante no Cerrado?", "options": ["Arenoso", "Argiloso", "Ácido e pobre em nutrientes", "Rico em matéria orgânica"], "answer": "Ácido e pobre em nutrientes" },
+            { "question": "O que é uma bacia hidrográfica?", "options": ["Conjunto de rios que deságuam em um mesmo local", "Área de encontro de placas tectônicas", "Região de alta biodiversidade", "Área montanhosa com rios"], "answer": "Conjunto de rios que deságuam em um mesmo local" },
+            { "question": "Qual é a principal característica do clima equatorial?", "options": ["Altas temperaturas e chuvas abundantes", "Temperaturas baixas e secas prolongadas", "Altas temperaturas e baixa umidade", "Amplitude térmica elevada"], "answer": "Altas temperaturas e chuvas abundantes" },
+            { "question": "O que caracteriza o relevo brasileiro?", "options": ["Grandes cadeias montanhosas", "Planaltos e planícies extensas", "Regiões vulcânicas ativas", "Terrenos glaciais"], "answer": "Planaltos e planícies extensas" },
+            { "question": "Qual é o bioma brasileiro caracterizado por árvores de pequeno porte e vegetação adaptada ao clima seco?", "options": ["Caatinga", "Cerrado", "Pampa", "Amazônia"], "answer": "Caatinga" }
+          ]
+        },        
+        {
+          "title": "Geopolítica",
+          "description": "Questões sobre política internacional e economia global.",
+          "questions": [
+            { "question": "Qual bloco econômico inclui Brasil, Argentina, Uruguai e Paraguai?", "options": ["NAFTA", "MERCOSUL", "UE", "BRICS"], "answer": "MERCOSUL" },
+            { "question": "Qual é o objetivo principal da ONU?", "options": ["Promover guerras", "Proteger fronteiras", "Garantir a paz mundial", "Criar leis"], "answer": "Garantir a paz mundial" },
+            { "question": "O que significa G7?", "options": ["Grupo de 7 continentes", "Grupo dos 7 países mais industrializados", "Grupo de 7 oceanos", "Grupo de 7 países emergentes"], "answer": "Grupo dos 7 países mais industrializados" },
+            { "question": "A União Europeia é um exemplo de:", "options": ["Organização política", "Bloco econômico", "Grupo ambientalista", "Associação cultural"], "answer": "Bloco econômico" },
+            { "question": "Qual é o principal objetivo da OPEP?", "options": ["Regular a produção de petróleo", "Proteger florestas", "Garantir direitos humanos", "Promover exportações"], "answer": "Regular a produção de petróleo" },
+            { "question": "Qual é o principal tratado que busca reduzir emissões de gases de efeito estufa?", "options": ["Tratado de Kyoto", "Acordo de Paris", "Protocolo de Montreal", "Carta de Roma"], "answer": "Acordo de Paris" },
+            { "question": "Qual país é considerado a maior economia do mundo?", "options": ["China", "Estados Unidos", "Japão", "Alemanha"], "answer": "Estados Unidos" },
+            { "question": "O que é BRICS?", "options": ["Bloco de países em desenvolvimento", "Organização de países exportadores de petróleo", "União de países da Ásia", "Grupo de países da OTAN"], "answer": "Bloco de países em desenvolvimento" },
+            { "question": "Qual é a principal moeda utilizada no comércio internacional?", "options": ["Euro", "Dólar Americano", "Libra Esterlina", "Iene"], "answer": "Dólar Americano" },
+            { "question": "O que é o FMI?", "options": ["Fundo Monetário Internacional", "Federação Mundial de Investimentos", "Força Militar Internacional", "Fundação de Mineração Internacional"], "answer": "Fundo Monetário Internacional" }
+          ]
+        }        
+      ]
+    },
+    {
+      "name": "História",
+      "topics": [
+        {
+          "title": "História do Brasil",
+          "description": "Questões sobre eventos históricos brasileiros.",
+          "questions": [
+            { "question": "Quem foi o primeiro imperador do Brasil?", "options": ["Dom Pedro I", "Dom Pedro II", "Getúlio Vargas", "Juscelino Kubitschek"], "answer": "Dom Pedro I" },
+            { "question": "Qual evento marcou o fim da escravidão no Brasil?", "options": ["Proclamação da República", "Abolição da escravatura", "Independência do Brasil", "Golpe militar"], "answer": "Abolição da escravatura" },
+            { "question": "Qual foi a capital do Brasil antes de Brasília?", "options": ["São Paulo", "Rio de Janeiro", "Belo Horizonte", "Salvador"], "answer": "Rio de Janeiro" },
+            { "question": "Em que ano ocorreu a Proclamação da República?", "options": ["1822", "1889", "1930", "1964"], "answer": "1889" },
+            { "question": "Quem proclamou a Independência do Brasil?", "options": ["Dom Pedro I", "Tiradentes", "Dom João VI", "Getúlio Vargas"], "answer": "Dom Pedro I" },
+            { "question": "Qual tratado reconheceu a Independência do Brasil?", "options": ["Tratado de Tordesilhas", "Tratado de Petrópolis", "Tratado de Lisboa", "Tratado de Paz e Aliança"], "answer": "Tratado de Paz e Aliança" },
+            { "question": "Quem foi o líder da Inconfidência Mineira?", "options": ["Tiradentes", "Dom Pedro I", "Dom Pedro II", "Getúlio Vargas"], "answer": "Tiradentes" },
+            { "question": "Qual foi o principal motivo da mudança da capital para Brasília?", "options": ["Proximidade com o litoral", "Centralização geográfica", "Clima mais ameno", "Aumento populacional"], "answer": "Centralização geográfica" },
+            { "question": "Quem foi o presidente durante o período conhecido como Estado Novo?", "options": ["Getúlio Vargas", "Juscelino Kubitschek", "João Goulart", "Eurico Gaspar Dutra"], "answer": "Getúlio Vargas" },
+            { "question": "Qual evento deu início à ditadura militar no Brasil?", "options": ["Golpe de 1964", "Proclamação da República", "Independência do Brasil", "Revolução de 1930"], "answer": "Golpe de 1964" }
+          ]
+        },
+        {
+          "title": "Colonização do Brasil",
+          "description": "Questões sobre o período colonial brasileiro.",
+          "questions": [
+            { "question": "Qual foi o principal produto explorado no início da colonização do Brasil?", "options": ["Cana-de-açúcar", "Café", "Pau-brasil", "Ouro"], "answer": "Pau-brasil" },
+            { "question": "O sistema de Capitanias Hereditárias foi instituído por qual monarca?", "options": ["Dom João VI", "Dom Pedro I", "Dom Pedro II", "Dom João III"], "answer": "Dom João III" },
+            { "question": "Qual era o objetivo das expedições bandeirantes no período colonial?", "options": ["Catequizar indígenas", "Explorar o interior do território", "Cultivar cana-de-açúcar", "Proclamar a independência"], "answer": "Explorar o interior do território" },
+            { "question": "O que foi o Tratado de Tordesilhas?", "options": ["Divisão territorial entre Portugal e Espanha", "Acordo comercial entre colônias", "Independência do Brasil", "Fim da escravidão indígena"], "answer": "Divisão territorial entre Portugal e Espanha" },
+            { "question": "Qual foi a principal atividade econômica durante o Ciclo do Ouro?", "options": ["Extração de ouro", "Plantio de café", "Pecuária", "Fabricação de tecidos"], "answer": "Extração de ouro" },
+            { "question": "Qual foi o principal objetivo da criação das missões jesuíticas?", "options": ["Evangelizar indígenas", "Explorar o ouro", "Produzir açúcar", "Expandir o território português"], "answer": "Evangelizar indígenas" },
+            { "question": "O que foi o escambo utilizado na economia colonial?", "options": ["Troca de mercadorias sem uso de dinheiro", "Importação de produtos da Europa", "Troca de escravos por ouro", "Venda de cana-de-açúcar para portugueses"], "answer": "Troca de mercadorias sem uso de dinheiro" },
+            { "question": "Qual foi o motivo principal da transferência da corte portuguesa para o Brasil em 1808?", "options": ["Fuga da invasão napoleônica", "Expansão territorial", "Independência do Brasil", "Conquista de novos mercados"], "answer": "Fuga da invasão napoleônica" },
+            { "question": "Qual era o objetivo do Pacto Colonial imposto por Portugal ao Brasil?", "options": ["Exclusividade comercial com a metrópole", "Liberdade de comércio", "Fim da escravidão", "Abolição dos impostos"], "answer": "Exclusividade comercial com a metrópole" },
+            { "question": "Qual atividade econômica foi introduzida no Brasil devido à influência holandesa?", "options": ["Cultivo de cana-de-açúcar", "Exportação de pau-brasil", "Produção de tabaco", "Plantio de cacau"], "answer": "Cultivo de cana-de-açúcar" }
+          ]
+        },
+        {
+          "title": "República Velha",
+          "description": "Questões sobre o período da República Velha no Brasil.",
+          "questions": [
+            { "question": "Qual foi o primeiro presidente do Brasil após a Proclamação da República?", "options": ["Deodoro da Fonseca", "Floriano Peixoto", "Getúlio Vargas", "Juscelino Kubitschek"], "answer": "Deodoro da Fonseca" },
+            { "question": "O que foi a Política dos Governadores?", "options": ["Aliança entre o governo federal e os estaduais", "Movimento de independência regional", "Revolução industrial brasileira", "Golpe militar de 1930"], "answer": "Aliança entre o governo federal e os estaduais" },
+            { "question": "Qual estado liderava a produção de café durante a República Velha?", "options": ["São Paulo", "Minas Gerais", "Bahia", "Rio de Janeiro"], "answer": "São Paulo" },
+            { "question": "O que foi o movimento conhecido como Revolta da Chibata?", "options": ["Protesto de marinheiros contra os maus-tratos", "Revolução contra o Império", "Rebelião indígena no interior", "Golpe militar"], "answer": "Protesto de marinheiros contra os maus-tratos" },
+            { "question": "O que marcou o fim da República Velha?", "options": ["Revolução de 1930", "Proclamação da República", "Golpe de 1964", "Independência do Brasil"], "answer": "Revolução de 1930" },
+            { "question": "Qual foi o principal motivo da Revolução de 1930?", "options": ["Fraudes eleitorais", "Queda do preço do café", "Golpe militar", "Industrialização"], "answer": "Fraudes eleitorais" },
+            { "question": "O que era o 'voto de cabresto' praticado na República Velha?", "options": ["Controle do voto por coronéis", "Cédula de votação secreta", "Exclusão de mulheres no voto", "Imposição de voto obrigatório"], "answer": "Controle do voto por coronéis" },
+            { "question": "Qual foi o objetivo da Revolta de Canudos?", "options": ["Protestar contra o governo republicano", "Defender a monarquia", "Promover a escravidão", "Abolir impostos rurais"], "answer": "Protestar contra o governo republicano" },
+            { "question": "Quem foi o principal líder da Revolta de Canudos?", "options": ["Antonio Conselheiro", "Getúlio Vargas", "Floriano Peixoto", "Dom Pedro I"], "answer": "Antonio Conselheiro" },
+            { "question": "O que significava a Política do Café com Leite?", "options": ["Aliança entre São Paulo e Minas Gerais na presidência", "Exportação de café e leite", "Industrialização de São Paulo", "Redistribuição de terras"], "answer": "Aliança entre São Paulo e Minas Gerais na presidência" }
+          ]
+        }                 
+      ]
+    },
+    {
+      "name": "Química",
+      "topics": [
+        {
+          "title": "Tabela Periódica",
+          "description": "Questões sobre elementos químicos.",
+          "questions": [
+            { "question": "Qual é o símbolo químico do Ouro?", "options": ["Au", "Ag", "Pb", "Fe"], "answer": "Au" },
+            { "question": "Quantos elementos há na tabela periódica atualmente?", "options": ["108", "118", "128", "138"], "answer": "118" },
+            { "question": "Qual grupo da tabela periódica contém os gases nobres?", "options": ["1", "8", "18", "2"], "answer": "18" },
+            { "question": "Qual é o elemento mais abundante no universo?", "options": ["Hidrogênio", "Oxigênio", "Carbono", "Nitrogênio"], "answer": "Hidrogênio" },
+            { "question": "Qual elemento tem número atômico 6?", "options": ["Oxigênio", "Carbono", "Nitrogênio", "Hélio"], "answer": "Carbono" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Física",
+      "topics": [
+        {
+          "title": "Cinemática",
+          "description": "Questões sobre movimento, velocidade e aceleração.",
+          "questions": [
+            { "question": "Um carro percorre 100 km em 2 horas. Qual é sua velocidade média?", "options": ["40 km/h", "50 km/h", "60 km/h", "70 km/h"], "answer": "50 km/h" },
+            { "question": "Se um corpo está em MRU, qual é a característica de sua aceleração?", "options": ["Aceleração constante", "Aceleração nula", "Aceleração variável", "Nenhuma das alternativas"], "answer": "Aceleração nula" },
+            { "question": "Um objeto cai de uma altura de 80m. Quanto tempo ele leva para atingir o solo? (Considere g = 10 m/s²)", "options": ["2s", "3s", "4s", "5s"], "answer": "4s" },
+            { "question": "Um ciclista percorre 1 km em 2 minutos. Qual é sua velocidade média em m/s?", "options": ["6 m/s", "7 m/s", "8 m/s", "9 m/s"], "answer": "8 m/s" },
+            { "question": "Se um carro acelera de 10 m/s para 30 m/s em 5 segundos, qual é sua aceleração?", "options": ["2 m/s²", "4 m/s²", "5 m/s²", "6 m/s²"], "answer": "4 m/s²" },
+            { "question": "Qual equação descreve a posição no MRUV?", "options": ["S = S0 + vt", "S = S0 + v0t + 1/2at²", "S = vt", "F = ma"], "answer": "S = S0 + v0t + 1/2at²" },
+            { "question": "O que ocorre com a velocidade de um objeto em queda livre?", "options": ["Diminui", "Aumenta", "Permanece constante", "Varia aleatoriamente"], "answer": "Aumenta" },
+            { "question": "Se um móvel tem velocidade inicial de 5 m/s e aceleração de 2 m/s², qual sua velocidade após 3 segundos?", "options": ["9 m/s", "10 m/s", "11 m/s", "12 m/s"], "answer": "11 m/s" },
+            { "question": "Qual das opções representa corretamente a aceleração da gravidade na Terra?", "options": ["8 m/s²", "9.8 m/s²", "10.5 m/s²", "12 m/s²"], "answer": "9.8 m/s²" },
+            { "question": "Se um objeto está em repouso e começa a se mover com uma aceleração de 3 m/s², qual será sua velocidade após 4 segundos?", "options": ["8 m/s", "10 m/s", "12 m/s", "15 m/s"], "answer": "12 m/s" }
+          ]
+        },
+        {
+          "title": "Eletricidade",
+          "description": "Questões sobre circuitos elétricos e potência.",
+          "questions": [
+            { "question": "Qual é a unidade de resistência elétrica?", "options": ["Volt", "Ohm", "Ampere", "Watt"], "answer": "Ohm" },
+            { "question": "Se um circuito possui uma resistência de 10Ω e uma tensão de 20V, qual é a corrente?", "options": ["1A", "2A", "5A", "10A"], "answer": "2A" },
+            { "question": "Qual é a equação da Lei de Ohm?", "options": ["V = R/I", "R = V/I", "I = V/R", "P = VI"], "answer": "I = V/R" },
+            { "question": "Qual é a unidade de potência elétrica?", "options": ["Ohm", "Watt", "Ampere", "Volt"], "answer": "Watt" },
+            { "question": "Se uma lâmpada opera em 110V e consome 2A, qual é sua potência?", "options": ["110W", "220W", "330W", "440W"], "answer": "220W" },
+            { "question": "O que acontece com a resistência em um circuito em série?", "options": ["Diminui", "Aumenta", "Permanece a mesma", "Depende da voltagem"], "answer": "Aumenta" },
+            { "question": "Qual componente é usado para armazenar carga elétrica?", "options": ["Resistor", "Diodo", "Capacitor", "Transformador"], "answer": "Capacitor" },
+            { "question": "Qual é a fórmula para calcular a potência elétrica?", "options": ["P = VI", "P = V/R", "P = I²R", "P = R/I"], "answer": "P = VI" },
+            { "question": "O que ocorre com a corrente em um circuito paralelo?", "options": ["É a mesma em todos os ramos", "Se divide entre os ramos", "Depende da resistência", "Depende da fonte de alimentação"], "answer": "Se divide entre os ramos" },
+            { "question": "Qual das seguintes grandezas não é fundamental em eletricidade?", "options": ["Corrente", "Tensão", "Carga", "Temperatura"], "answer": "Temperatura" }
+          ]
+        },
+        {
+          "title": "Termodinâmica",
+          "description": "Questões sobre calor, trabalho e energia térmica.",
+          "questions": [
+            { "question": "Qual é a unidade de medida do calor?", "options": ["Joule", "Kelvin", "Watt", "Ampere"], "answer": "Joule" },
+            { "question": "O que ocorre com um gás quando ele sofre uma compressão adiabática?", "options": ["A temperatura aumenta", "A temperatura diminui", "A pressão diminui", "O volume aumenta"], "answer": "A temperatura aumenta" },
+            { "question": "Qual das alternativas representa corretamente a Primeira Lei da Termodinâmica?", "options": ["ΔU = Q - W", "Q = m.c.ΔT", "PV = nRT", "W = F.d"], "answer": "ΔU = Q - W" },
+            { "question": "O que é a entropia?", "options": ["Energia total de um sistema", "Grau de desordem de um sistema", "Quantidade de calor transmitido", "Trabalho realizado por um gás"], "answer": "Grau de desordem de um sistema" },
+            { "question": "Qual é o princípio do funcionamento de um motor térmico?", "options": ["Conversão de calor em trabalho", "Conversão de trabalho em calor", "Produção de energia elétrica", "Refrigeração de um sistema"], "answer": "Conversão de calor em trabalho" },
+            { "question": "O que acontece com um gás ideal durante uma expansão isotérmica?", "options": ["A temperatura aumenta", "A temperatura diminui", "A pressão aumenta", "O volume aumenta"], "answer": "O volume aumenta" },
+            { "question": "Qual é a unidade de medida da temperatura no Sistema Internacional?", "options": ["Kelvin", "Celsius", "Fahrenheit", "Rankine"], "answer": "Kelvin" },
+            { "question": "O que caracteriza uma transformação isocórica?", "options": ["Volume constante", "Pressão constante", "Temperatura constante", "Quantidade de calor constante"], "answer": "Volume constante" },
+            { "question": "Qual é a relação correta entre energia interna, calor e trabalho em um sistema termodinâmico?", "options": ["ΔU = Q + W", "ΔU = Q - W", "Q = W - ΔU", "W = ΔU - Q"], "answer": "ΔU = Q - W" },
+            { "question": "Em um processo adiabático, qual a variação de calor no sistema?", "options": ["Zero", "Positiva", "Negativa", "Depende da pressão"], "answer": "Zero" }
+          ]
+        },
+        {
+          "title": "Óptica",
+          "description": "Questões sobre luz, reflexão e refração.",
+          "questions": [
+            { "question": "Qual é a lei da reflexão?", "options": ["O ângulo de incidência é igual ao ângulo de reflexão", "A luz se propaga em linha reta", "A velocidade da luz é constante", "A luz não pode ser refletida"], "answer": "O ângulo de incidência é igual ao ângulo de reflexão" },
+            { "question": "O que ocorre quando a luz passa de um meio menos refringente para um mais refringente?", "options": ["Ela se afasta da normal", "Ela se aproxima da normal", "Ela mantém sua direção", "Ela se reflete completamente"], "answer": "Ela se aproxima da normal" },
+            { "question": "O que é a refração da luz?", "options": ["Mudança na velocidade da luz ao mudar de meio", "Reflexão total", "Dispersão da luz", "Propagação retilínea"], "answer": "Mudança na velocidade da luz ao mudar de meio" },
+            { "question": "Qual é a equação fundamental da óptica geométrica?", "options": ["n1 * sen(i) = n2 * sen(r)", "E = mc²", "F = ma", "PV = nRT"], "answer": "n1 * sen(i) = n2 * sen(r)" },
+            { "question": "O que é a dispersão da luz?", "options": ["Separação das cores da luz branca", "Mudança de direção da luz", "Aumento da intensidade luminosa", "Absorção total da luz"], "answer": "Separação das cores da luz branca" },
+            { "question": "Qual é a unidade de medida da intensidade luminosa?", "options": ["Candela", "Lúmen", "Lux", "Watt"], "answer": "Candela" },
+            { "question": "O que é um espelho côncavo?", "options": ["Superfície refletora curva para dentro", "Superfície plana refletora", "Superfície refletora curva para fora", "Superfície que absorve luz"], "answer": "Superfície refletora curva para dentro" },
+            { "question": "Como ocorre a formação de uma imagem em uma lente convergente?", "options": ["A luz converge para um ponto focal", "A luz diverge", "A luz reflete", "A luz se dispersa"], "answer": "A luz converge para um ponto focal" },
+            { "question": "O que é a aberração cromática?", "options": ["Separação das cores devido à refração desigual", "Reflexão total da luz", "Mudança de direção da luz ao passar por um meio", "Aumento do brilho de um objeto"], "answer": "Separação das cores devido à refração desigual" },
+            { "question": "Qual é a fórmula da equação dos espelhos?", "options": ["1/f = 1/p + 1/p'", "F = ma", "E = mc²", "PV = nRT"], "answer": "1/f = 1/p + 1/p'" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Biologia",
+      "topics": [
+        {
+          "title": "Ecologia",
+          "description": "Questões sobre cadeias alimentares e ecossistemas.",
+          "questions": [
+            { "question": "O que é um produtor em uma cadeia alimentar?", "options": ["Animal", "Planta", "Fungo", "Bactéria"], "answer": "Planta" },
+            { "question": "Qual é o principal gás responsável pelo efeito estufa?", "options": ["Oxigênio", "Gás carbônico", "Hidrogênio", "Metano"], "answer": "Gás carbônico" },
+            { "question": "O que é biodiversidade?", "options": ["Quantidade de espécies em um ecossistema", "Quantidade de energia", "Quantidade de carbono", "Quantidade de nutrientes"], "answer": "Quantidade de espécies em um ecossistema" },
+            { "question": "Qual bioma é caracterizado por árvores de grande porte e alta biodiversidade?", "options": ["Caatinga", "Cerrado", "Mata Atlântica", "Pantanal"], "answer": "Mata Atlântica" },
+            { "question": "O que são decompositores?", "options": ["Seres vivos que se alimentam de matéria orgânica morta", "Organismos que produzem energia", "Consumidores primários", "Predadores"], "answer": "Seres vivos que se alimentam de matéria orgânica morta" }
+          ]
+        }
+      ]
+    }
+  ]
+}
