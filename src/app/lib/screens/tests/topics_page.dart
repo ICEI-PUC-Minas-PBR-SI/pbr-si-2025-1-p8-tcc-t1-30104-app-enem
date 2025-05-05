@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'questions_page.dart';
 
-class TopicsPage extends StatelessWidget {
+class TopicsPage extends StatefulWidget {
   final List<dynamic> topics;
   final String subjectName;
 
@@ -12,12 +12,47 @@ class TopicsPage extends StatelessWidget {
   });
 
   @override
+  State<TopicsPage> createState() => _TopicsPageState();
+}
+
+class _TopicsPageState extends State<TopicsPage> {
+  String selectedDifficulty = 'todas';
+
+  Widget _buildDifficultySelector() {
+    final options = ['todas', 'fácil', 'médio', 'difícil'];
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 12),
+      child: Wrap(
+        spacing: 8,
+        children: options.map((option) {
+          final isSelected = selectedDifficulty == option;
+          return ChoiceChip(
+            label: Text(
+              option[0].toUpperCase() + option.substring(1),
+              style: TextStyle(
+                color: isSelected ? Colors.white : Colors.deepPurple,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            selected: isSelected,
+            selectedColor: Colors.deepPurple,
+            backgroundColor: Colors.grey[200],
+            onSelected: (_) {
+              setState(() => selectedDifficulty = option);
+            },
+          );
+        }).toList(),
+      ),
+    );
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
-          'Exercícios de $subjectName',
+          'Exercícios de ${widget.subjectName}',
           style: const TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
@@ -32,6 +67,7 @@ class TopicsPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            _buildDifficultySelector(),
             const Padding(
               padding: EdgeInsets.only(bottom: 16),
               child: Text(
@@ -41,18 +77,21 @@ class TopicsPage extends StatelessWidget {
             ),
             Expanded(
               child: ListView.builder(
-                itemCount: topics.length,
+                itemCount: widget.topics.length,
                 itemBuilder: (context, index) {
-                  final topic = topics[index];
+                  final topic = widget.topics[index];
                   return GestureDetector(
                     onTap: () {
+                      final filteredQuestions = selectedDifficulty == 'todas'
+                          ? topic['questions']
+                          : topic['questions'].where((q) => q['difficulty'] == selectedDifficulty).toList();
                       Navigator.push(
                         context,
                         MaterialPageRoute(
                           builder: (context) => QuestionsPage(
-                            questions: topic['questions'],
+                            questions: filteredQuestions,
                             topicTitle: topic['title'],
-                            subjectName: subjectName,
+                            subjectName: widget.subjectName,
                           ),
                         ),
                       );
@@ -67,13 +106,13 @@ class TopicsPage extends StatelessWidget {
                           BoxShadow(
                             color: Colors.grey.withOpacity(0.3),
                             blurRadius: 8,
-                            offset: Offset(3, 3),
+                            offset: const Offset(3, 3),
                           ),
                         ],
                       ),
                       child: Row(
                         children: [
-                          Icon(Icons.topic, size: 40, color: Colors.deepPurple),
+                          const Icon(Icons.topic, size: 40, color: Colors.deepPurple),
                           const SizedBox(width: 16),
                           Expanded(
                             child: Column(

@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 import 'package:app/bd/banco_dados.dart';
 import 'package:flutter/material.dart';
@@ -6,12 +7,14 @@ class QuestionsPage extends StatefulWidget {
   final List<dynamic> questions;
   final String topicTitle;
   final String subjectName;
+  final bool isSimulado;
 
   const QuestionsPage({
     super.key,
     required this.questions,
     required this.topicTitle,
     required this.subjectName,
+    this.isSimulado = false,
   });
 
   @override
@@ -28,11 +31,37 @@ class _QuestionsPageState extends State<QuestionsPage> {
   List<int> _wrongAnswers = [];
   bool _isTestFinished = false;
 
+  Timer? _timer;
+  int _remainingTime = 120;
+
   @override
   void initState() {
     super.initState();
-    _selectedQuestions = _getRandomQuestions(widget.questions, 5);
+    _selectedQuestions = widget.questions.length > 5
+        ? widget.questions
+        : _getRandomQuestions(widget.questions, 5);
     _selectedOptions = List<String?>.filled(_selectedQuestions.length, null);
+
+    if (widget.isSimulado) {
+      _startTimer();
+    }
+  }
+
+  void _startTimer() {
+    _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
+      if (_remainingTime > 0) {
+        setState(() => _remainingTime--);
+      } else {
+        timer.cancel();
+        _finishTest();
+      }
+    });
+  }
+
+  String _formatTime(int seconds) {
+    final min = seconds ~/ 60;
+    final sec = seconds % 60;
+    return '${min.toString().padLeft(2, '0')}:${sec.toString().padLeft(2, '0')}';
   }
 
   Future<bool?> _showExitConfirmationDialog() {
@@ -72,6 +101,7 @@ class _QuestionsPageState extends State<QuestionsPage> {
   }
 
   void _finishTest() async {
+    _timer?.cancel();
     final dbHelper = DatabaseHelper();
     await dbHelper.insertResult(
       widget.subjectName,
@@ -80,13 +110,17 @@ class _QuestionsPageState extends State<QuestionsPage> {
       _selectedQuestions.length,
     );
 
-    setState(() {
-      _isTestFinished = true;
-    });
+    setState(() => _isTestFinished = true);
   }
 
   @override
   Widget build(BuildContext context) {
+    if (_selectedQuestions.isEmpty) {
+      return const Scaffold(
+        body: Center(child: Text('Nenhuma questão disponível.')),
+      );
+    }
+
     final currentQuestion = _selectedQuestions[_currentQuestionIndex];
 
     return WillPopScope(
@@ -99,6 +133,19 @@ class _QuestionsPageState extends State<QuestionsPage> {
             style: const TextStyle(color: Colors.white),
           ),
           backgroundColor: Colors.deepPurple,
+          actions: widget.isSimulado && !_isTestFinished
+              ? [
+                  Padding(
+                    padding: const EdgeInsets.only(right: 16),
+                    child: Center(
+                      child: Text(
+                        _formatTime(_remainingTime),
+                        style: const TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  )
+                ]
+              : null,
         ),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -147,13 +194,10 @@ class _QuestionsPageState extends State<QuestionsPage> {
                   ),
                   margin: const EdgeInsets.symmetric(vertical: 6),
                   child: RadioListTile<String>(
-                    title: Text(
-                      option,
-                      style: TextStyle(color: textColor),
-                    ),
+                    title: Text(option, style: TextStyle(color: textColor)),
                     value: option,
                     groupValue: _selectedOption,
-                    onChanged: !_isTestFinished
+                    onChanged: !_isTestFinished && _remainingTime > 0
                         ? (value) {
                             setState(() {
                               _selectedOption = value;
@@ -182,8 +226,7 @@ class _QuestionsPageState extends State<QuestionsPage> {
                       backgroundColor: Colors.deepPurple,
                       padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
                     ),
-                    child: const Text('Voltar',
-                        style: TextStyle(fontSize: 16, color: Colors.white)),
+                    child: const Text('Voltar', style: TextStyle(color: Colors.white)),
                   ),
                   ElevatedButton(
                     onPressed: () {
@@ -197,6 +240,7 @@ class _QuestionsPageState extends State<QuestionsPage> {
                         } else {
                           _wrongAnswers.add(_currentQuestionIndex);
                         }
+
                         if (_currentQuestionIndex < _selectedQuestions.length - 1) {
                           setState(() {
                             _currentQuestionIndex++;
@@ -214,7 +258,7 @@ class _QuestionsPageState extends State<QuestionsPage> {
                     ),
                     child: Text(
                       _isTestFinished ? 'Finalizar' : 'Próxima',
-                      style: const TextStyle(fontSize: 16, color: Colors.white),
+                      style: const TextStyle(color: Colors.white),
                     ),
                   ),
                 ],
@@ -234,5 +278,11 @@ class _QuestionsPageState extends State<QuestionsPage> {
     final random = Random();
     final shuffled = List<dynamic>.from(questions)..shuffle(random);
     return shuffled.take(count).toList();
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
   }
 }
