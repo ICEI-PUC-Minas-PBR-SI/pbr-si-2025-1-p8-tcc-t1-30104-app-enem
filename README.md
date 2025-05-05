@@ -1,56 +1,59 @@
-# Informações sobre o Trabalho de Conclusão de Curso (TCC)
-`TÍTULO DO TCC`  
+# Trabalho de Conclusão de Curso (TCC)
 
-Trabalho de Conclusão de Curso (TCC)
+## Título do TCC
+**Desenvolvimento de um Aplicativo Educacional para Auxílio na Preparação para o ENEM**
 
-`CURSO`: 
+## Curso
+**Sistemas de Informação**
 
-`SEMESTRE:`
+## Semestre
+**2024/2**
 
-`Objetivos de Desenvolvimento Sustentável (ODS) da ONU:` 
-> Incluir o(s) número(s) e a(s) descrição(ões) do(s) ODS da ONU que o TCC atende. 
+## Objetivos de Desenvolvimento Sustentável (ODS) da ONU
+Este TCC está alinhado com os seguintes ODS da ONU:
+
+- **ODS 4 - Educação de Qualidade:** Assegurar a educação inclusiva, equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todos.
+- **ODS 10 - Redução das Desigualdades:** Reduzir a desigualdade dentro dos países e entre eles, promovendo acesso equitativo à educação por meio de soluções tecnológicas gratuitas para populações de baixa renda.
+
+---
 
 ## Participantes
+Os membros da equipe deste projeto são:
 
-Os membros da equipe são: 
-- Fulano da Silva
-- Ciclano Albuquerque
+- **Ellen Campos Martins**  
+- **João Augusto Mendes Pereira**
 
-> Incluir a lista dos membros da equipe com seus nomes completos.
+---
 
-# Estrutura do Projeto
+## Estrutura do Projeto
+
+A documentação do projeto está organizada conforme os arquivos a seguir:
 
 1. [Contexto](./docs/1-Contexto.md)
 2. [Especificação do Projeto](./docs/2-Especificação.md)
-4. [Gerenciamento do Projeto](./docs/4-Gerenciamento-Projeto.md)
-5. [Implementação](./docs/5-Implementação.md)
-6. [Referências](./docs/6-Referências.md)
-7. [Apresentação do trabalho](./docs/apresentacao/README.md) 
+3. [Gerenciamento do Projeto](./docs/4-Gerenciamento-Projeto.md)
+4. [Implementação](./docs/5-Implementação.md)
+5. [Referências](./docs/6-Referências.md)
+6. [Apresentação do Trabalho](./docs/apresentacao/README.md)
 
+---
 
+## Estrutura de Pastas
 
-## Pasta docs
+### `docs/`
+Contém toda a documentação do projeto.
 
-Esta pasta arquiva a documentação dos projetos.
+- `apresentacao/`: arquivos utilizados para a apresentação do trabalho.
+- `artigo/`: artigo completo do TCC.
+- `imagem/`: imagens utilizadas nos documentos.
+- `video/`: vídeos relacionados ao projeto.
 
-Na pasta `docs`, há uma subpasta `apresentacao` que armazena os arquivos utilizados para a apresentação do trabalho.
+### `src/`
+Contém o código-fonte da aplicação desenvolvida.
 
-Na pasta `docs`, há uma subpasta `artigo` que arquiva o artigo do trabalho.
+---
 
-Na pasta `docs`, há uma subpasta `imagem` que armazena todas as
-imagens utilizadas para a elaboração do documento.
+## Links Úteis
 
-Na pasta `docs`, há uma subpasta `video` que arquiva todos os
-videos do trabalho.
-
-## Pasta src
-
-Este diretório armazena o código fonte do projeto
-
-### Links Úteis:
-
-Aprenda Markdown e use-o para documentar o projeto  
-
-> [Sintaxe básica de gravação e formatação no GitHub](https://guides.github.com/features/mastering-markdown/)
-
-> [Suporte Github](https://help.github.com/pt/github/writing-on-github/getting-started-with-writing-and-formatting-on-github)
+- [Sintaxe básica de Markdown no GitHub](https://guides.github.com/features/mastering-markdown/)
+- [Ajuda oficial do GitHub sobre Markdown](https://help.github.com/pt/github/writing-on-github/getting-started-with-writing-and-formatting-on-github)
