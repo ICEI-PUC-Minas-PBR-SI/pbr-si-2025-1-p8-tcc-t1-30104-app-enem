@@ -9,7 +9,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  await uploadQuestionsToFirestore(); // 👈 função que faz o seed
+  await uploadQuestionsToFirestore();
 
   print('✅ Seed finalizado com sucesso!');
 }

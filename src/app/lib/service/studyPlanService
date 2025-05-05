@@ -1,0 +1,33 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+class StudyPlanService {
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+
+  Future<List<Map<String, dynamic>>> fetchStudyPlans() async {
+    final snapshot = await _firestore.collection('studyPlans').get();
+
+    return snapshot.docs.map((doc) {
+      final data = doc.data();
+      return {
+        'id': doc.id,
+        'subject': data['subject'],
+        'topic': data['topic'],
+        'progress': data['progress'] ?? 0,
+      };
+    }).toList();
+  }
+
+  Future<void> addStudyPlan(String subject, String topic) async {
+    await _firestore.collection('studyPlans').add({
+      'subject': subject,
+      'topic': topic,
+      'progress': 0,
+    });
+  }
+
+  Future<void> updateStudyProgress(String docId, int newProgress) async {
+    await _firestore.collection('studyPlans').doc(docId).update({
+      'progress': newProgress,
+    });
+  }
+}

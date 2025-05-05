@@ -1,3 +1,4 @@
+import 'package:app/screens/simulated/simulad_page.dart';
 import 'package:app/service/tests.service.dart';
 import 'package:flutter/material.dart';
 import 'topics_page.dart';
@@ -53,56 +54,98 @@ class _TestsPageState extends State<TestsPage> {
       backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-        child: ListView.builder(
-          itemCount: _subjects.length,
-          itemBuilder: (context, index) {
-            final subject = _subjects[index];
-            return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => TopicsPage(
-                      topics: subject['topics'],
-                      subjectName: subject['name'],
-                    ),
-                  ),
-                );
-              },
-              child: Container(
-                margin: const EdgeInsets.symmetric(vertical: 8),
-                padding: const EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(16),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.3),
-                      blurRadius: 8,
-                      offset: const Offset(3, 3),
-                    ),
-                  ],
-                ),
-                child: Row(
-                  children: [
-                    const Icon(Icons.book, size: 40, color: Colors.deepPurple),
-                    const SizedBox(width: 16),
-                    Expanded(
-                      child: Text(
-                        subject['name'],
-                        style: const TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black87,
+        child: ListView(
+          children: [
+            _buildSimuladoCard(context),
+            const SizedBox(height: 12),
+            ..._subjects.map((subject) => GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => TopicsPage(
+                          topics: subject['topics'],
+                          subjectName: subject['name'],
                         ),
                       ),
+                    );
+                  },
+                  child: Container(
+                    margin: const EdgeInsets.symmetric(vertical: 8),
+                    padding: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(16),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.3),
+                          blurRadius: 8,
+                          offset: const Offset(3, 3),
+                        ),
+                      ],
                     ),
-                    const Icon(Icons.arrow_forward_ios, color: Colors.deepPurple),
-                  ],
+                    child: Row(
+                      children: [
+                        const Icon(Icons.book, size: 40, color: Colors.deepPurple),
+                        const SizedBox(width: 16),
+                        Expanded(
+                          child: Text(
+                            subject['name'],
+                            style: const TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black87,
+                            ),
+                          ),
+                        ),
+                        const Icon(Icons.arrow_forward_ios, color: Colors.deepPurple),
+                      ],
+                    ),
+                  ),
+                ))
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSimuladoCard(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => const SimuladoPage()),
+        );
+      },
+      child: Container(
+        padding: const EdgeInsets.all(20),
+        decoration: BoxDecoration(
+          color: Colors.deepPurple,
+          borderRadius: BorderRadius.circular(16),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.1),
+              blurRadius: 6,
+              offset: const Offset(0, 3),
+            ),
+          ],
+        ),
+        child: Row(
+          children: const [
+            Icon(Icons.timer, color: Colors.white, size: 32),
+            SizedBox(width: 16),
+            Expanded(
+              child: Text(
+                'Fazer Simulado',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),
               ),
-            );
-          },
+            ),
+            Icon(Icons.arrow_forward_ios, color: Colors.white),
+          ],
         ),
       ),
     );

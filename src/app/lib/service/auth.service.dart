@@ -50,6 +50,19 @@ class AuthService {
     );
 
     final userCred = await _auth.signInWithCredential(credential);
+
+    final docRef = _firestore.collection('users').doc(userCred.user!.uid);
+    final docSnapshot = await docRef.get();
+
+    if (!docSnapshot.exists) {
+      await docRef.set({
+        'nome': googleUser.displayName ?? '',
+        'email': googleUser.email,
+        'idade': null,
+        'criadoEm': DateTime.now(),
+      });
+    }
+
     return userCred.user;
   }
 
