@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Novo App de Testes',
+      title: 'Enem Estude',
       theme: ThemeData(primarySwatch: Colors.deepPurple),
      home: const AuthRedirector(),
     );

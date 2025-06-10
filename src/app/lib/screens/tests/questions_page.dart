@@ -32,7 +32,7 @@ class _QuestionsPageState extends State<QuestionsPage> {
   bool _isTestFinished = false;
 
   Timer? _timer;
-  int _remainingTime = 120;
+  int _remainingTime = 10800;
 
   @override
   void initState() {
