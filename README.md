@@ -141,3 +141,7 @@ Contém o código-fonte da aplicação desenvolvida.
 
 - [Sintaxe básica de Markdown no GitHub](https://guides.github.com/features/mastering-markdown/)
 - [Ajuda oficial do GitHub sobre Markdown](https://help.github.com/pt/github/writing-on-github/getting-started-with-writing-and-formatting-on-github)
+
+## Link para baixa apk v1.0.0
+👉 [📥 Download do APK (app-release.apk)](https://github.com/ICEI-PUC-Minas-PBR-SI/pbr-si-2025-1-p8-tcc-t1-30104-app-enem/releases/latest)
+
