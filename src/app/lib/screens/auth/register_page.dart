@@ -17,39 +17,40 @@ class _RegisterPageState extends State<RegisterPage> {
   final _idadeCtrl = TextEditingController();
   final AuthService _authService = AuthService();
 
-void _register() async {
-  if (!_formKey.currentState!.validate()) return;
+  bool _isPasswordVisible = false;
 
-  if (_senhaCtrl.text.length < 6) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('A senha deve ter no mínimo 6 caracteres.')),
-    );
-    return;
+  void _register() async {
+    if (!_formKey.currentState!.validate()) return;
+
+    if (_senhaCtrl.text.length < 6) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('A senha deve ter no mínimo 6 caracteres.')),
+      );
+      return;
+    }
+
+    try {
+      await _authService.registerWithEmail(
+        nome: _nomeCtrl.text,
+        idade: int.parse(_idadeCtrl.text),
+        email: _emailCtrl.text,
+        senha: _senhaCtrl.text,
+      );
+
+      if (!mounted) return;
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const LoginPage()),
+      );
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Cadastro realizado com sucesso! Faça login.")),
+      );
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Erro ao cadastrar: ${e.toString()}')),
+      );
+    }
   }
-
-  try {
-    await _authService.registerWithEmail(
-      nome: _nomeCtrl.text,
-      idade: int.parse(_idadeCtrl.text),
-      email: _emailCtrl.text,
-      senha: _senhaCtrl.text,
-    );
-
-    if (!mounted) return;
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(builder: (context) => const LoginPage()),
-    );;
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text("Cadastro realizado com sucesso! Faça login.")),
-    );
-  } catch (e) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Erro ao cadastrar: ${e.toString()}')),
-    );
-  }
-}
-
 
   @override
   Widget build(BuildContext context) {
@@ -99,8 +100,20 @@ void _register() async {
                   const SizedBox(height: 12),
                   TextFormField(
                     controller: _senhaCtrl,
-                    decoration: const InputDecoration(labelText: 'Senha'),
-                    obscureText: true,
+                    decoration: InputDecoration(
+                      labelText: 'Senha',
+                      suffixIcon: IconButton(
+                        icon: Icon(
+                          _isPasswordVisible ? Icons.visibility : Icons.visibility_off,
+                        ),
+                        onPressed: () {
+                          setState(() {
+                            _isPasswordVisible = !_isPasswordVisible;
+                          });
+                        },
+                      ),
+                    ),
+                    obscureText: !_isPasswordVisible,
                     validator: (value) => value!.length < 6 ? 'Mínimo 6 caracteres' : null,
                   ),
                   const SizedBox(height: 24),
@@ -116,11 +129,11 @@ void _register() async {
                   const SizedBox(height: 16),
                   TextButton(
                     onPressed: () {
-                     Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(builder: (context) => const LoginPage()),
-                    );
-                  },
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => const LoginPage()),
+                      );
+                    },
                     child: const Text(
                       'Já tem uma conta? Entrar',
                       style: TextStyle(color: Colors.deepPurple),

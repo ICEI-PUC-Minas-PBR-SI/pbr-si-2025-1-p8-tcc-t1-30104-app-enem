@@ -1,6 +1,8 @@
+import 'package:app/screens/auth/login_page.dart';
 import 'package:app/screens/profile/profile_page.dart';
 import 'package:app/screens/result/result_page.dart';
 import 'package:app/screens/study_plan/study_plan_page.dart';
+import 'package:app/service/auth.service.dart';
 import 'package:flutter/material.dart';
 import '../tests/tests_page.dart';
 
@@ -25,13 +27,29 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
-        title: const Text(
-          'Novo App de Testes',
-          style: TextStyle(color: Colors.white),
-        ),
-        backgroundColor: Colors.deepPurple,
-        elevation: 5,
+      title: const Text(
+        'Enem Estude',
+        style: TextStyle(color: Colors.white),
       ),
+      backgroundColor: Colors.deepPurple,
+      elevation: 5,
+      actions: _selectedIndex == 3
+          ? [
+              IconButton(
+                icon: const Icon(Icons.logout, color: Colors.white),
+                tooltip: "Sair",
+                onPressed: () async {
+                  await AuthService().logout();
+                  Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(builder: (_) => const LoginPage()),
+                    (route) => false,
+                  );
+                },
+              ),
+            ]
+          : null,
+    ),
       body: Stack(
         children: [
           Padding(
