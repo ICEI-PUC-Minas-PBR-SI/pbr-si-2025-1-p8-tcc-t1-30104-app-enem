@@ -20,8 +20,82 @@ Este TCC está alinhado com os seguintes ODS da ONU:
 ## Participantes
 Os membros da equipe deste projeto são:
 
-- **Ellen Campos Martins**  
-- **João Augusto Mendes Pereira**
+- **Ellen Campos Martins** — [ellen.martins@sga.pucminas.com.br](mailto:ellen.martins@sga.pucminas.com.br)  
+- **João Augusto Mendes Pereira** — [jampereira@sga.pucminas.br](mailto:jampereira@sga.pucminas.br)  
+- **Orientador:** Prof. Wesley Dias Maciel — [wesleydiasmaciel@gmail.com](mailto:wesleydiasmaciel@gmail.com)  
+
+---
+
+## Resumo do Projeto
+
+O projeto consistiu no desenvolvimento de um aplicativo educacional gratuito, voltado para estudantes de baixa renda, com o objetivo de auxiliá-los na preparação para o **Exame Nacional do Ensino Médio (ENEM)**.
+
+Problemas identificados:
+
+- Dificuldade de acesso a materiais didáticos de qualidade.
+- Alto custo de cursinhos preparatórios.
+- Desigualdade no desempenho de estudantes de escolas públicas.
+
+Objetivo:
+
+- Democratizar o acesso a conteúdos preparatórios para o ENEM.
+- Oferecer uma ferramenta moderna, interativa e gratuita.
+- Contribuir para a redução das desigualdades educacionais.
+
+---
+
+## Tecnologias Utilizadas
+
+- **Frontend:** Flutter  
+- **Linguagem:** Dart  
+- **Backend / Banco de Dados:** Firebase (Cloud Firestore, Authentication)  
+- **Controle de versão:** Git + GitHub  
+- **IDE:** Visual Studio Code  
+
+---
+
+## Metodologia
+
+- **Framework de desenvolvimento:** Scrum (sprints mensais)  
+- **Pesquisa de campo:** Questionário aplicado a 35 estudantes para entender perfil, dificuldades e necessidades.  
+- **Desenvolvimento iterativo** com validação contínua com usuários.  
+
+---
+
+## Principais Funcionalidades
+
+- Cadastro e login de usuários.
+- Aplicação de simulados cronometrados com banco de questões.
+- Controle e exibição de progresso e desempenho.
+- Plano de estudo personalizado.
+- Alertas de tempo durante simulados.
+- Funcionalidade de revisão de respostas.
+
+---
+
+## Resultados
+
+- 68,6% dos estudantes têm entre 15 e 17 anos; 80% estudam em escolas públicas.
+- As maiores dificuldades são em **Matemática** e **Ciências da Natureza**.
+- Baixa adesão atual à prática de simulados.
+- Grande interesse no uso de **apps educacionais**, com funcionalidades como:
+  - **Acompanhamento de progresso**
+  - **Notificações de lembretes de estudo**
+  - **Plano de estudo personalizado**
+
+O aplicativo foi validado como uma ferramenta eficaz para potencializar a preparação para o ENEM e contribuir para reduzir desigualdades educacionais.
+
+👉 **Demonstração em vídeo:** [https://www.youtube.com/watch?v=8V2H2hGqe5I](https://www.youtube.com/watch?v=8V2H2hGqe5I)
+
+---
+
+## Trabalhos Futuros
+
+- Implementação de modo **off-line** para regiões com baixa conectividade.
+- Suporte a autenticação via **conta Google**.
+- Expansão para **iOS** (compatibilidade com dispositivos Apple).
+- Testes em larga escala com estudantes.
+- Coleta contínua de feedbacks para evolução da aplicação.
 
 ---
 
