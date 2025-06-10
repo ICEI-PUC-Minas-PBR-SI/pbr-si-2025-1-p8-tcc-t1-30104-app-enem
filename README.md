@@ -7,7 +7,7 @@
 **Sistemas de Informação**
 
 ## Semestre
-**2024/2**
+**2025/1**
 
 ## Objetivos de Desenvolvimento Sustentável (ODS) da ONU
 Este TCC está alinhado com os seguintes ODS da ONU:
@@ -23,6 +23,16 @@ Os membros da equipe deste projeto são:
 - **Ellen Campos Martins** — [ellen.martins@sga.pucminas.com.br](mailto:ellen.martins@sga.pucminas.com.br)  
 - **João Augusto Mendes Pereira** — [jampereira@sga.pucminas.br](mailto:jampereira@sga.pucminas.br)  
 - **Orientador:** Prof. Wesley Dias Maciel — [wesleydiasmaciel@gmail.com](mailto:wesleydiasmaciel@gmail.com)  
+
+---
+
+## 📱 Download do Aplicativo
+
+Você pode baixar a versão mais recente do aplicativo no link abaixo:
+
+👉 [📥 Download do APK (app-release.apk)](https://github.com/SEU_REPOSITORIO/releases/latest)  
+
+> ⚠️ Obs: O link acima deve ser atualizado com o link real da sua release no GitHub. Caso prefira, você também pode colocar o link direto para o arquivo APK no repositório ou usar o GitHub Pages / Google Drive.
 
 ---
 
